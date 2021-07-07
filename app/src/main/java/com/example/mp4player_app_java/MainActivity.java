@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.thunder);
+                videoView.setMediaController(mediaController);
+
             }
         });
     }
