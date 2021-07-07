@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         stopButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                videoView.stopPlayback();
             }
         });
     }
