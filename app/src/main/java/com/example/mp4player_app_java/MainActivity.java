@@ -31,5 +31,12 @@ public class MainActivity extends AppCompatActivity {
                 videoView.start();
             }
         });
+
+        stopButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
