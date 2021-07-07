@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.thunder);
             }
         });
     }
