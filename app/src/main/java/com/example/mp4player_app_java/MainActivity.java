@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
     Button playButton;
     VideoView videoView;
+    MediaController mediaController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
