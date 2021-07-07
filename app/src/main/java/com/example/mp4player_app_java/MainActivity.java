@@ -9,7 +9,7 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
-    Button playButton;
+    Button playButton, stopButton;
     VideoView videoView;
     MediaController mediaController;
 
