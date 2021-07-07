@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.thunder);
                 videoView.setMediaController(mediaController);
                 mediaController.setAnchorView(videoView);
+                videoView.start();
             }
         });
     }
