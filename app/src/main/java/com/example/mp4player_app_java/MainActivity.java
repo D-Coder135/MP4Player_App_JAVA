@@ -22,21 +22,13 @@ public class MainActivity extends AppCompatActivity {
         videoView = findViewById(R.id.videoView2);
         mediaController = new MediaController(this);
 
-        playButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.thunder);
-                videoView.setMediaController(mediaController);
-                mediaController.setAnchorView(videoView);
-                videoView.start();
-            }
+        playButton.setOnClickListener(v -> {
+            videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.thunder);
+            videoView.setMediaController(mediaController);
+            mediaController.setAnchorView(videoView);
+            videoView.start();
         });
 
-        stopButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                videoView.stopPlayback();
-            }
-        });
+        stopButton.setOnClickListener(v -> videoView.stopPlayback());
     }
 }
