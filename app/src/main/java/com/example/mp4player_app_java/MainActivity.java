@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         playButton = findViewById(R.id.button);
+        stopButton = findViewById(R.id.button3);
         videoView = findViewById(R.id.videoView2);
         mediaController = new MediaController(this);
 
